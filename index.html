@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="style.css">
+  <title>Credit Card Form Amirbek</title>
+</head>
+<body>
+  <div class="left">
+    <div class="card-front">
+      <div class="number">0000 0000 0000 0000</div>
+      <div class="name-exp">
+        <div>Hojiev Amirbek</div>
+        <div>00/00</div>
+      </div>
+    </div>
+    <div class="card-back">
+      <div class="black-strip"></div>
+      <div class="cvc-strip">
+        <div class="cvc">000</div>
+      </div>
+      <div class="placeholder-text">
+        <span></span>
+        <span style="width: 80%;"></span>
+        <span style="width: 60%;"></span>
+      </div>
+    </div>
+  </div>
+
+  <div class="right">
+    <div>
+      <form class="form">
+        <label for="name">CARDHOLDER NAME</label>
+        <input type="text" id="name" placeholder="e.g. Hojiev Amirbek">
+
+        <label for="card">CARD NUMBER</label>
+        <input type="text" id="card" placeholder="e.g. 1234 5678 9123 0000">
+
+        <div class="row">
+          <div>
+            <label for="mm">EXP. DATE (MM/YY)</label>
+            <div class="row">
+              <input type="text" id="mm" placeholder="MM" style="width: 60px;">
+              <input type="text" id="yy" placeholder="YY" style="width: 60px;">
+            </div>
+          </div>
+
+          <div>
+            <label for="cvc">CVC</label>
+            <input type="text" id="cvc" placeholder="e.g. 123" style="width: 100px;">
+          </div>
+        </div>
+
+        <button type="button" id="confirmBtn">Confirm</button>
+      </form>
+      <div class="confirmation">
+        <img src="icon-complete.svg" alt="image">
+        <h1 style="color: black;">Thank you</h1>
+        <p style="color: black;">We've added your card details</p>
+      </div>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
